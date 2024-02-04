@@ -1,14 +1,15 @@
 # Bussiness Sales Analysis Project
 
 
-#### Project overview
+
+### Project overview
 
 This data analysis project aims to provide insights into the sales performance of a Pizza company over the 2015 year. By analyzing various aspects of the sales data, we seek to identify trends, make data-driven recommendations, and gain a deeper understanding of the company's performance along with specific requirements by the client.
+---
 
+# `Ask`
 
-# Ask
-
-### Problem Statement
+### Bussiness Problem Statement
 
 #### KPI's Requirement
 
@@ -30,16 +31,18 @@ We would like to visualize various aspects of our pizza sales data to gain insig
 - Which pizzas are the top 5 best sellers based on total pizzas sold?
 - Which pizzas are the bottom 5 worst sellers based on total pizzas sold?
 
+---
 
-# Prepare
+# `Prepare`
 
 ### Data source & Integrity
 
 The Primary dataset used for this analysis is the [pizza_sales.xlsx](https://1drv.ms/x/s!AjKhR_ndv-LThkg2pyCeKcz983VS?e=7x3veL) file, containing detailed infoprmation about various aspects of the sales made by the company.
 this Data was primarily Stored in a Kaggle dataset and was downloaded. The Data is in long format and was initially very Dirty. The data is Relialbe, Credible and comprehensive. it has all the information required for us to answer the bussiness questions. Initially SQL was used to clean and get our required KPI's and tables to form charts.
 
+---
 
-# Process
+# `Process`
 
 ### Tools Used
 
@@ -58,10 +61,7 @@ this Data was primarily Stored in a Kaggle dataset and was downloaded. The Data 
    - Maintained a detailed data cleaning log.
    - Used version control for tracking changes.
 
-
-# Analyse
-
-### Pizza Sales Querries Used In The Project
+### Pizza Sales Querries Used In The Project 
 
 #### A. KPI’s
 1. Total Revenue:
@@ -167,10 +167,12 @@ ORDER BY Total_Pizza_Sold ASC;
 
 
 ### We will later use these query results for Data Validation in Excel before making each Pivot chart.
+---
 
+# `Analysis`
 
 ## Data Importing & formatting in Excel
-After firing all our queries in Microsoft SQL server, we go ahead and import this data into Excel from Microsoft SQL Serverfor further analysis. 
+After firing all our queries in Microsoft SQL server, we go ahead and import this data into Excel from Microsoft SQL Server for further analysis. 
 
 ## Pivots for EDA and KPI's
 
@@ -245,5 +247,53 @@ Chart:
 
 
 
-## All these Pivot charts that you saw above are really in for some serious glow-up 😙
+## All these Pivot charts that you saw above are really in for some serious glow-up for the sharing phase 😙
+
+---
+
+# `Share`
+
+## To present our findings to our Stakeholders a Dynamic Dashboard is prepared in Excel.
+
+
+![Screenshot 2024-02-04 153637](https://github.com/Luckychoudharyy/Sales_Analysis_Project/assets/157785333/6eb0dfc8-6619-4403-86fb-126764967e41)
+
+
+All the pivot charts were moulded and formatted to present our key findings in a very interactive manner.
+
+
+# Key Findings From Analysis
+
+- Orders are highest on weekends, Friday/saturday evenings.
+  
+- There are maximum Orders from 12 - 01 pm to 4 - 7pm.
+
+- classic category contributes to the maximum sales and total orders.
+
+- Large size pizza contributes to the maximum sales
+
+- Classic Delux and Chicken pizza are the top sellers and revenue generators.
+
+- The Brie carre pizza is the bottom in both orders and revenue. 
+
+---
+
+# `Act`
+
+## Recommendations
+
+- Optimize Staffing and Inventory: Given the peak times, ensure adequate staffing and inventory during these hours to handle the high volume of orders and maintain customer satisfaction.
+
+- Promote Popular Items: Leverage the popularity of the Classic category and Large size pizzas in marketing campaigns to attract more customers.
+
+- Bundle Offers: Consider creating bundle offers that include the top-selling pizzas to increase average order value.
+
+- Re-evaluate Underperforming Product: For the Brie Carre pizza, consider revising its recipe or marketing strategy, or replacing it with a new product if it continues to underperform.
+
+- Loyalty Program: Implement a loyalty program to encourage repeat orders, especially targeting customers who order during peak times and prefer the popular items.
+  
+
+---
+
+ 
 

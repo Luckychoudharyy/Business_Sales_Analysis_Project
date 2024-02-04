@@ -35,7 +35,7 @@ We would like to visualize various aspects of our pizza sales data to gain insig
 
 ### Data source & Integrity
 
-The Primary dataset used for this analysis is the "pizza_sales.xlsx" file, containing detailed infoprmation about various aspects of the sales made by the company.
+The Primary dataset used for this analysis is the [pizza_sales.xlsx](https://1drv.ms/x/s!AjKhR_ndv-LThkg2pyCeKcz983VS?e=7x3veL) file, containing detailed infoprmation about various aspects of the sales made by the company.
 this Data was primarily Stored in a Kaggle dataset and was downloaded. The Data is in long format and was initially very Dirty. The data is Relialbe, Credible and comprehensive. it has all the information required for us to answer the bussiness questions. Initially SQL was used to clean and get our required KPI's and tables to form charts.
 
 
@@ -145,12 +145,105 @@ ORDER BY Total_Quantity_Sold DESC;
 ```
 ![image](https://github.com/Luckychoudharyy/Sales_Analysis_Project/assets/157785333/9e564bbd-0c43-4d8e-a14d-c87e721886a3)
 
+#### G. Top 5 Best Sellers by Total Pizzas Sold
+``` SQL
+SELECT Top 5 pizza_name, SUM(quantity) AS Total_Pizza_Sold
+FROM pizza_sales
+GROUP BY pizza_name
+ORDER BY Total_Pizza_Sold DESC;
+```
+![image](https://github.com/Luckychoudharyy/Sales_Analysis_Project/assets/157785333/26a5a17a-74ce-44bd-bc83-b770258d9ba9)
+
+#### H. Bottom 5 Best Sellers by Total Pizzas Sold
+``` SQL
+SELECT TOP 5 pizza_name, SUM(quantity) AS Total_Pizza_Sold
+FROM pizza_sales
+GROUP BY pizza_name
+ORDER BY Total_Pizza_Sold ASC;
+```
+![image](https://github.com/Luckychoudharyy/Sales_Analysis_Project/assets/157785333/0503be64-f8b7-41f4-8dae-f2838c1c4fdc)
 
 
-  
+
+
+### We will later use these query results for Data Validation in Excel before making each Pivot chart.
+
+
+## Data Importing & formatting in Excel
+After firing all our queries in Microsoft SQL server, we go ahead and import this data into Excel from Microsoft SQL Serverfor further analysis. 
+
+## Pivots for EDA and KPI's
+
+### A. KPI's 
+
+![Screenshot 2024-02-04 154238](https://github.com/Luckychoudharyy/Sales_Analysis_Project/assets/157785333/ed6d00f6-d258-4805-aaa0-74548ef420f5)
+
+### B. Trends for total orders
+1. Daily Orders
+
+![image](https://github.com/Luckychoudharyy/Sales_Analysis_Project/assets/157785333/8e6f57dd-943d-410f-ae04-8ff4590a0305)  
+
+Chart:
+
+![image](https://github.com/Luckychoudharyy/Sales_Analysis_Project/assets/157785333/ae795616-6fac-441b-b8e3-afe08e58ce47)
+
+2. Hourly Orders
+   
+![image](https://github.com/Luckychoudharyy/Sales_Analysis_Project/assets/157785333/80e65dfe-1838-429e-bad1-76772d605e50)
+
+Chart:
+
+![image](https://github.com/Luckychoudharyy/Sales_Analysis_Project/assets/157785333/e05532d8-c4a4-4a19-8419-6633beb7af25)
+
+### Percentage of sales
+1. % of Sales by pizza size
+
+![image](https://github.com/Luckychoudharyy/Sales_Analysis_Project/assets/157785333/e04b8c4f-9ef4-4615-bcc3-831535ba04ff)
+
+Chart: 
+
+![image](https://github.com/Luckychoudharyy/Sales_Analysis_Project/assets/157785333/9f8865b8-ed2f-456e-929f-ed1cfcb44613)
+
+2. % of sales by pizza name
+
+![image](https://github.com/Luckychoudharyy/Sales_Analysis_Project/assets/157785333/3dafea61-3693-4571-8c9e-220499d6fd3d)
+
+Chart: 
+
+![image](https://github.com/Luckychoudharyy/Sales_Analysis_Project/assets/157785333/55983548-2548-4437-90a2-1c37d94ff580)
+
+### Daily Trend For Orders
+		
+![image](https://github.com/Luckychoudharyy/Sales_Analysis_Project/assets/157785333/4c242a04-ce2c-4b68-b983-3d343dffbed9)
+
+
+Chart: We had to bring the values out of this pivot to make a funnel Chart.
+		
+![image](https://github.com/Luckychoudharyy/Sales_Analysis_Project/assets/157785333/f50da00a-024e-4e63-8b70-e4d6b0a5b16a)
+
+### Top & Bottom five sellers
+
+1. Top five best selling pizzas
+
+![image](https://github.com/Luckychoudharyy/Sales_Analysis_Project/assets/157785333/8e56091e-500c-4938-b999-52f63f5a05ce)
+
+Chart: 
+
+![image](https://github.com/Luckychoudharyy/Sales_Analysis_Project/assets/157785333/cf171dab-a10f-4a1f-9563-18a8f514dc93)
+
+2. Bottom five worst selling pizzas
+
+![image](https://github.com/Luckychoudharyy/Sales_Analysis_Project/assets/157785333/7596c5a8-044d-4db1-92e4-320c772f0aee)
+
+ Chart: 
+
+ ![image](https://github.com/Luckychoudharyy/Sales_Analysis_Project/assets/157785333/3911898f-94d6-4a93-9151-eeba7c497fba)
+
+### Timeline slicer
+
+![image](https://github.com/Luckychoudharyy/Sales_Analysis_Project/assets/157785333/18d0c3ee-ceab-486f-a3cb-e44879320168)
 
 
 
-
-
+## All these Pivot charts that you saw above are really in for some serious glow-up 😙
 

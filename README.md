@@ -1,4 +1,4 @@
-# Bussiness Sales Analysis Project
+# Business Sales Analysis Project
 
 
 
@@ -9,7 +9,7 @@ This data analysis project aims to provide insights into the sales performance o
 
 # `Ask`
 
-### Bussiness Problem Statement
+### Business Problem Statement
 
 #### KPI's Requirement
 
@@ -47,7 +47,7 @@ this Data was primarily Stored in a Kaggle dataset and was downloaded. The Data 
 ### Tools Used
 
 - Microsoft SQL Server :- Initial Cleaning, filtering & sorting and Data Validation.
-- Micersoft Excel :- Data cleaning, Data analysis and Visualisations.
+- Microsoft Excel :- Data cleaning, Data analysis and Visualisations.
 
 #### **Data Integrity Assurance:**
    - Regularly conducted data integrity checks.

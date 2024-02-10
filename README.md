@@ -1,4 +1,4 @@
-# Business Sales Analysis Project
+# Customer Sales Analysis Project
 
 
 

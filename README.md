@@ -11,6 +11,8 @@ This data analysis project aims to provide insights into the sales performance o
 
 ### Business Problem Statement
 
+In the fast-paced and competitive food industry, understanding sales performance is crucial for any business to thrive and grow. Our client, a renowned Pizza company, seeks to gain a comprehensive understanding of their sales performance for the fiscal year 2015. The objective of our Customer Sales Analysis project is to meticulously examine diverse facets within the sales data, uncover pertinent trends, and formulate actionable insights. Through this rigorous analysis, we aim to provide data-driven recommendations that will enable our client to make informed decisions and strategically plan for future growth and optimization. The challenge lies in effectively analyzing the vast amount of sales data to derive meaningful insights that can directly contribute to the company's bottom line and overall success.
+
 #### KPI's Requirement
 
 We need to analyze key indicators for our pizza sales data to gain insights into our business performance. Specifically, we want to calculate the following metrics:

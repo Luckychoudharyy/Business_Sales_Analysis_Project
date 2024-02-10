@@ -22,7 +22,7 @@ We need to analyze key indicators for our pizza sales data to gain insights into
 4. Total Orders: The total number of orders placed.
 5. Average Pizzas Per Order: The average number of pizzas sold per order, calculated by dividing the total number of pizzas sold by the total number of orders.
 
-#### Charts Requirement & Explainatory Data Analysis (EDA)
+#### Charts Requirement 
 
 We would like to visualize various aspects of our pizza sales data to gain insights and understand key trends. We have identified the following requirements for creating charts:
 - What is the daily trend for total orders?
@@ -56,7 +56,6 @@ this Data was primarily Stored in a Kaggle dataset and was downloaded. The Data 
    - Implemented checksums and validation routines.
 
 #### **Verification of Data Readiness:**
-   - Performed exploratory data analysis (EDA) for outliers.
    - Validated data against predefined documentation done through SQL.
 
 #### **Documentation of Cleaning Process:**
